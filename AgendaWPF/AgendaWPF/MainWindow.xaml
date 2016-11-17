@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AgendaWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="365.79">
+        Title="MainWindow" Height="419.737" Width="365.79">
     <Grid>
         <TextBox x:Name="txtDesc" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="Descrição" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtLocal" HorizontalAlignment="Left" Height="23" Margin="10,38,0,0" TextWrapping="Wrap" Text="Local" VerticalAlignment="Top" Width="120"/>
         <DatePicker x:Name="datepicker" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="checkBox" Content="Realizado" HorizontalAlignment="Left" Margin="135,46,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="266,23,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="266,23,0,0" VerticalAlignment="Top" Width="75" Click="btnCadastrar_Click"/>
         <Rectangle Fill="#DEDEDE" HorizontalAlignment="Left" Height="8" Margin="-1,66,0,0" VerticalAlignment="Top" Width="359"/>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="183" Margin="10,126,0,0" VerticalAlignment="Top" Width="338">
+        <ListView x:Name="lvCompromissos" HorizontalAlignment="Left" Height="183" Margin="10,126,0,0" VerticalAlignment="Top" Width="338">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
@@ -21,6 +21,9 @@
             </ListView.View>
         </ListView>
         <Label x:Name="label" Content="Compromissos" FontSize="24px" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnListar" Content="Listar" HorizontalAlignment="Left" Margin="266,95,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnListar" Content="Listar" HorizontalAlignment="Left" Margin="266,95,0,0" VerticalAlignment="Top" Width="75" Click="btnListar_Click"/>
+        <Rectangle Fill="#DEDEDE" HorizontalAlignment="Left" Height="8" Margin="0,314,-1,0" VerticalAlignment="Top" Width="359"/>
+        <Button x:Name="btnDispServ" Content="Atualizar (D-S)" HorizontalAlignment="Left" Margin="10,338,0,0" VerticalAlignment="Top" Width="120" Height="41" Click="btnDispServ_Click"/>
+        <Button x:Name="btnServDisp" Content="Atualizar (S-D)" HorizontalAlignment="Left" Margin="221,338,0,0" VerticalAlignment="Top" Width="120" Height="41" Click="btnServDisp_Click"/>
     </Grid>
 </Window>
