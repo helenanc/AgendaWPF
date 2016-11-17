@@ -45,15 +45,21 @@ namespace AgendaWPF
             comp.Data = datepicker.SelectedDate.Value;
             comp.Realizado = IsRealizado();
             compromissos.Add(comp);
-            MessageBox.Show("Cadastrado!");
+            Listar();
         }
 
         private void btnListar_Click(object sender, RoutedEventArgs e)
         {
+            Listar();
+        }
+
+        private void Listar()
+        {
+            lvCompromissos.ItemsSource = null;
             foreach (Models.Compromisso c in compromissos)
             {
-                lvCompromissos.Items.Add("Desc: " + c.Descricao + 
-                    " Local: " + c.Local + " Data: " + c.Data.Date + 
+                lvCompromissos.Items.Add("Desc: " + c.Descricao +
+                    " Local: " + c.Local + " Data: " + c.Data.Date +
                     " Realizado: " + c.Realizado);
             }
         }
@@ -101,6 +107,15 @@ namespace AgendaWPF
             compromissos = obj;
 
             MessageBox.Show("Atualizado (S-D)!");
+        }
+
+        private void btnRealizar_Click(object sender, RoutedEventArgs e)
+        {
+            Models.Compromisso comp = (Models.Compromisso)lvCompromissos.SelectedItem;
+            comp.Realizado = true;
+            int z = compromissos.FindIndex(x => x.Id == comp.Id);
+            compromissos[z] = comp;
+            Listar();
         }
     }
 }
