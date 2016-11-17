@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaWPF", "AgendaWPF\AgendaWPF.csproj", "{DC6CF3CA-4CC6-4D00-8F42-170DBF96E37D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaREST", "AgendaREST\AgendaREST.csproj", "{1AAE6449-43CB-4FB6-97D4-E82EBEB4F42B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DC6CF3CA-4CC6-4D00-8F42-170DBF96E37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC6CF3CA-4CC6-4D00-8F42-170DBF96E37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC6CF3CA-4CC6-4D00-8F42-170DBF96E37D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AAE6449-43CB-4FB6-97D4-E82EBEB4F42B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAE6449-43CB-4FB6-97D4-E82EBEB4F42B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAE6449-43CB-4FB6-97D4-E82EBEB4F42B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAE6449-43CB-4FB6-97D4-E82EBEB4F42B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
